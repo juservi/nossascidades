@@ -1,0 +1,37 @@
+import csv
+import collections
+
+arquivo=open("convenios.txt","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter="|")
+
+
+    
+def conta_valores(tipo_valor,tipo):
+    valor=collections.Counter()
+    for linha in leitor:
+        if linha["Valor Convenio"]!=None:
+        
+                    
+            
+            linha[tipo_valor]=float(linha[tipo_valor])
+        
+        
+            
+        
+            valor[linha[tipo]]+= int(linha[tipo_valor])
+          
+    return valor
+
+
+conta=conta_valores("Valor Convenio","Situacao Convenio")
+print(conta)    
+        
+saida=open("total_conveniado.csv","w",encoding="Latin-1")
+
+escritor=csv.writer(saida,delimiter="|",lineterminator="\n")
+escritor.writerow(["SituacaoConvenio","ValorConvenio"])
+
+for registro in conta.items():
+    escritor.writerow(registro)
+        
+saida.close()
