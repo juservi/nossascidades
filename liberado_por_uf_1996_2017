@@ -1,0 +1,40 @@
+import csv
+import collections
+
+arquivo=open("convenios.txt","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter="|")
+
+def conta_valores(tipo_valor,tipo):
+    valor=collections.Counter()
+    for linha in leitor:
+        if linha[tipo_valor]!= None:
+            
+            
+        
+            
+            linha[tipo_valor]=float(linha[tipo_valor])
+        
+        
+            
+        
+            valor[linha[tipo]]+= int(linha[tipo_valor])
+          
+    return valor
+
+
+
+conta=(conta_valores("Valor Liberado","UF"))
+saida=open("liberado_por_UF_1996_2017.csv","w",encoding="Latin-1")
+
+escritor=csv.writer(saida,delimiter="|",lineterminator="\n")
+escritor.writerow(["UF","ValorLiberado"])
+
+for registro in conta.items():
+    escritor.writerow(registro)
+        
+saida.close()
+
+#Essa função verifica se os valores totais estão de acordo com os dados do Portal da Transparência.
+#Se for alterada a coluna("Valor Convênio") por "Valor Liberado", os dados também conferem. Há um pequeno desvio porque para facilitar
+#a visualização dos números foram usados apenas valores inteiros, excluíndo os centavos. 
+
