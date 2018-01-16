@@ -1,0 +1,21 @@
+import csv
+
+arquivo=open("dados_finais_1996_2017.csv","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter=";")
+for linha in leitor:
+    if linha["ValorInconsistente"]=="NaN-55":
+        if linha["PerdaDefinitiva"]=="NaN-55":
+            if linha["ConcluidoInconsistente"]=="NaN-55":
+                
+        
+            
+                linha["%PopBolsa"]=int(linha["%PopBolsa"])
+                if linha["%PopBolsa"]>20:
+                               
+                    if linha["Classificacao"]=="Baixo":
+                    
+                
+               
+                        print(linha["NomeMunicipio"],linha["UF"],linha["PerdaDefinitiva"],linha["%PopBolsa"])
+                    
+        
