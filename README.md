@@ -1,3 +1,4 @@
+
 # nossascidades
 Nossas Cidades é um estudo realizado com a liguagem de programação Python e SQLite para verificar os recursos que os municípios brasileiros deixaram de investir nos últimos 20 anos. 
 Neste estudo, você vai saber:
@@ -5,6 +6,8 @@ Neste estudo, você vai saber:
 - Quais municípios mais desperdiçaram as oportunidades;
 - Qual é o município brasileiro campeão, que investiu cada centavo que recebeu do Governo Federal;
 - Recursos enviados para o exterior superaram valores de muitas cidades brasileiras.
+
+Informação importante: como o arquivo base de estudo convenios.txt tem quase 200 mb não foi possível fazer o upload no Github, mas ele pode ser aberto por este link https://drive.google.com/file/d/1463dQnvNIaG-4vkI0NePRUHs28YqJKMc/view?usp=sharing
 
 A explicação segue abaixo, mas para ver o arquivo completo com imagens e informações mais detalhadas acesse esse link:
 https://drive.google.com/file/d/1jrmTBUfWlKk-a_hJcu9nTlh7tWFdO5A5/view?usp=sharing
