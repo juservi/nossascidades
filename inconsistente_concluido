@@ -18,7 +18,7 @@ def conta_valores(tipo_valor,tipo):
 
 
 conta=(conta_valores("Valor Convenio","Codigo SIAFI Municipio"))
-saida=open("inconsistente_completo.csv","w",encoding="Latin-1")
+saida=open("inconsistente_concluido.csv","w",encoding="Latin-1")
 
 escritor=csv.writer(saida,delimiter="|",lineterminator="\n")
 escritor.writerow(["CodigoSIAFIMunicipio","ValorLiberado"])
