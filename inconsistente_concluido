@@ -1,0 +1,29 @@
+import csv
+import collections
+
+arquivo=open("convenios.txt","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter="|")
+
+def conta_valores(tipo_valor,tipo):
+    valor=collections.Counter()
+    for linha in leitor:
+        if linha["Situacao Convenio"]=="Concluido":
+            if linha["Valor Liberado"]=="0.00":
+                
+                linha[tipo_valor]=float(linha[tipo_valor])
+        
+                valor[linha[tipo]]+= int(linha[tipo_valor])
+          
+    return valor
+
+
+conta=(conta_valores("Valor Convenio","Codigo SIAFI Municipio"))
+saida=open("inconsistente_completo.csv","w",encoding="Latin-1")
+
+escritor=csv.writer(saida,delimiter="|",lineterminator="\n")
+escritor.writerow(["CodigoSIAFIMunicipio","ValorLiberado"])
+
+for registro in conta.items():
+    escritor.writerow(registro)
+        
+saida.close()
