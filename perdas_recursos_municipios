@@ -1,0 +1,37 @@
+import csv
+import collections
+
+arquivo=open("convenios.txt","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter="|")
+
+def conta_valores(tipo_valor,tipo):
+    valor=collections.Counter()
+    for linha in leitor:
+        if linha["Valor Convenio"]!= None:
+            if linha["Situacao Convenio"]=="Anulado" or linha["Situacao Convenio"]=="Rescindido" or linha["Situacao Convenio"]=="Excluido" or linha["Situacao Convenio"]=="Cancelado" or linha["Situacao Convenio"]=="Baixado" or linha["Situacao Convenio"]=="Arquivado":
+                
+                if linha["Valor Liberado"]=="0.00":
+                    
+            
+        
+            
+                    linha[tipo_valor]=float(linha[tipo_valor])
+        
+        
+            
+        
+                    valor[linha[tipo]]+= int(linha[tipo_valor])
+          
+    return valor
+
+
+conta=(conta_valores("Valor Convenio","Codigo SIAFI Municipio"))
+saida=open("perdas_recursos_1996_2017.csv","w",encoding="Latin-1")
+
+escritor=csv.writer(saida,delimiter="|",lineterminator="\n")
+escritor.writerow(["CodigoSIAFIMunicipio","PerdaConvenio"])
+
+for registro in conta.items():
+    escritor.writerow(registro)
+        
+saida.close()
