@@ -1,0 +1,8 @@
+import csv
+import pandas as pd
+
+arquivo=open("dados_finais_municipios_1996_2017.csv","r",encoding="Latin-1")
+dado=pd.read_csv("dados_finais_municipios_1996_2017.csv",delimiter=";",encoding="Latin-1",low_memory=False)
+
+escritor=dado.to_csv("dados_finais_1996_2017.csv",sep="|",na_rep="NaN-55",encoding="Latin-1")
+
