@@ -1,0 +1,10 @@
+import csv
+
+
+arquivo=open("convenios.txt","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter="|")
+for linha in leitor:
+    if linha["Codigo SIAFI Municipio"]=="-2":    
+        print(linha["Nome Municipio"],"|",linha["UF"],"|",linha["Nome Orgao Superior"],"|",linha["Situacao Convenio"],"|",linha["Valor Convenio"],"|",linha["Valor Liberado"],"|",linha["Objeto Convenio"])
+        
+#Utilizo este arquivo para fazer alguma pesquisa rápida sobre um recurso de um município, por exemplo. 
