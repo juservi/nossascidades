@@ -1,0 +1,40 @@
+import csv
+
+L=[]
+arquivo=open("dados_finais_1996_2017.csv","r",encoding="Latin-1")
+leitor=csv.DictReader(arquivo,delimiter=";")
+
+L_02=[]
+for registro in leitor:
+    if registro["Populacao"] not in L_02 and registro["Populacao"]!="NaN-55":
+        
+        L_02.append(registro["Populacao"])
+        
+                
+L_pop=([float(x) for x in L_02])
+
+
+print("Cidades com mais de 500 mil habitantes que estão atrás do exterior")
+for y in L_pop[68:]:
+        if y>500000:
+            print(y)
+
+print("Cidades com menos de 100 mil habitantes que estão na frente do exterior")
+for z in L_pop[:68]:
+        if z<100000:
+            print(z)
+
+#O exterior no csv está na linha 69, então fiz uma lista com todas as populações para verificar as que estão acima de exterior
+#e possuem menos de 100 mil habitantes e as que estão abaixo com mais de 500 mil habitantes 
+        
+    
+    
+        
+    
+    
+
+        
+    
+    
+
+    
