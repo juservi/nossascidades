@@ -1,3 +1,4 @@
+
 import csv
 
 arquivo=open("dados_finais_1996_2017.csv","r",encoding="Latin-1")
@@ -18,4 +19,5 @@ for linha in leitor:
                
                         print(linha["NomeMunicipio"],linha["UF"],linha["PerdaDefinitiva"],linha["%PopBolsa"])
                     
-        
+#Neste programa percorri o arquivo dados_finais_1996_2017.csv para verificar as cidades que apresentam IDH baixo, dependência 
+#de acima de 20% do Bolsa Família e e que não constasse perdas definitivas 
