@@ -26,7 +26,7 @@ for z in L_pop[:68]:
 
 #O exterior no csv está na linha 69, então fiz uma lista com todas as populações para verificar as que estão acima de exterior
 #e possuem menos de 100 mil habitantes e as que estão abaixo com mais de 500 mil habitantes. Os dados verificados com este programa
-#estão no Read.me. 
+#estão no Readme.MD 
         
     
     
