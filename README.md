@@ -9,8 +9,9 @@ Neste estudo, você vai saber:
 
 Informação importante: como o arquivo base de estudo convenios.txt tem quase 200 mb não foi possível fazer o upload no Github, mas ele pode ser aberto por este link https://drive.google.com/file/d/1463dQnvNIaG-4vkI0NePRUHs28YqJKMc/view?usp=sharing
 
-A explicação segue abaixo, mas para ver o arquivo completo com imagens e informações mais detalhadas acesse esse link:
-https://drive.google.com/file/d/1jrmTBUfWlKk-a_hJcu9nTlh7tWFdO5A5/view?usp=sharing
+A explicação segue abaixo, mas para ver o arquivo completo com imagens, documentos e pareceres dos órgãos de controle acesse esse link:
+
+https://drive.google.com/file/d/1b7FlZKqtmft-OEriFaDmAklknEmtJZhs/view?usp=sharing
 
 Introdução
 
@@ -101,7 +102,7 @@ A segunda colocada no ranking é a cidade de Jandaia, em Goiás. O município co
 
 O recurso de mais de seis milhões de reais para a implantação de um sistema para o tratamento do lixo chegou a ser anunciado no site da cidade vizinha de Anápolis (http://www.anapolis.go.gov.br/portal/multimidia/noticias/ver/consasup3rcio-da-apa-do-ribeirapo-joapo-leite-ac-novamente-pauta-de-reuniapo), que também faz parte da região chamada APA do Ribeirão João Leite.
 
-O terceiro da lista com maiores registros de perdas de convênios é Casa Grande, em Minas Gerais, já citado no tópico dos municípios que menos receberam recursos. Em quarto lugar vem outra cidade goiana, Terezópolis de Goiás. Conforme parecer exarado pela FUNASA, a falta do cumprimento de obrigações dentro do prazo teria levado à extinção do convênio. Terezópolis de Goiás possui pouco mais de 2 mil habitantes e faz parte da APA do Ribeirão João Leite que reúne sete municípios. 
+O terceiro da lista com maiores registros de perdas de convênios é Casa Grande, em Minas Gerais, já citado no tópico dos municípios que menos receberam recursos. Em quarto lugar vem outra cidade goiana, Terezópolis de Goiás. Conforme parecer exarado pela Fundação Nacional de Saúde, FUNASA, a falta do cumprimento de obrigações dentro do prazo teria levado à extinção do convênio. Terezópolis de Goiás possui pouco mais de 2 mil habitantes e faz parte da APA do Ribeirão João Leite que reúne sete municípios. 
 
 Novo Santo Antônio é uma cidade do Mato Grosso que fica às margens do Rio das Mortes ocupa o quinto lugar. O levantamento de seus convênios com o Python mostra que o município celebrou poucos convênios nos últimos 20 anos:
 
